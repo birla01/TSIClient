@@ -24,6 +24,7 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
+    sudo apt-get install python3-requests
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
